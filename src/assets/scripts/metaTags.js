@@ -1,3 +1,4 @@
+console.log("adding meta tags");
 var viewport = document.createElement('meta');
 var ogUrl = document.createElement('meta');
 var ogTitle = document.createElement('meta');
@@ -13,6 +14,11 @@ ogDescription.property = "og:description";
 ogDescription.content = "Your source for meta tag documentation.";
 ogImage.property = "og:image";
 ogImage.content = "https://metametameta.net/assets/images/meta.png";
+console.log(viewport);
+console.log(ogUrl);
+console.log(ogTitle);
+console.log(ogDescription);
+console.log(ogImage);
 document.getElementsByTagName('head')[0].appendChild(viewport);
 document.getElementsByTagName('head')[0].appendChild(ogUrl);
 document.getElementsByTagName('head')[0].appendChild(ogTitle);
