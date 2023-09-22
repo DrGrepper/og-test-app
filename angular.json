@@ -30,7 +30,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
-              "src/assets/images"
+              "src/assets/images",
+              "src/assets/scripts"
             ],
             "styles": [
               "src/styles.scss"
