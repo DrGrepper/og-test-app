@@ -1,6 +1,10 @@
 {
-    "navigationFallback": {
-      "rewrite": "/index.html",
-      "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
-    }
+  "routes": {
+    "route": "/resources*",
+    "rewrite": "/assets/resources-meta.html"
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
   }
+}
