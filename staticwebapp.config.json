@@ -1,6 +1,6 @@
 {
   "routes": {
-    "route": "/resources*",
+    "route": "/resources/*",
     "rewrite": "/assets/resources-meta.html"
   },
   "navigationFallback": {
