@@ -2,11 +2,11 @@
   "routes": [
       {
         "route": "/resources/*",
-        "rewrite": "/assets/resources-meta.html"
+        "rewrite": "https://metametameta.net/assets/resources-meta.html"
       }
     ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/images/*.{png,jpg,gif}", "/assets/*", "/css/*"]
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
   }
 }
