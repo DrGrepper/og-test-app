@@ -2,7 +2,7 @@
   "routes": [
       {
         "route": "/resources/*",
-        "rewrite": "https://metametameta.net/assets/resources-meta.html"
+        "rewrite": "/assets/html/resources-meta.html"
       }
     ],
   "navigationFallback": {
