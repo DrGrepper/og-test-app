@@ -22,17 +22,10 @@
         return response.text()
     })
     .then(function(html) {
-        // Initialize the DOM parser
-        var parser = new DOMParser();
+        var newBody = html.substring(
+          html.indexOf("<body>") + 1,
+          html.lastIndexOf("</body>"));
 
-        // Parse the text
-        var doc = parser.parseFromString(html, "text/html");
-
-        // You can now even select part of that html as you would in the regular DOM 
-        // Example:
-        // var docArticle = doc.querySelector('article').innerHTML;
-
-        var newBody = doc.getElementsByTagName("body")[0];
         console.log(newBody);
         document.getElementsByTagName("body")[0].innerHTML = newBody;
     })
