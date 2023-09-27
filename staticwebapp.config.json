@@ -2,7 +2,7 @@
   "routes": [
       {
         "route": "/resources/*",
-        "rewrite": "/assets/html/resources-meta.html"
+        "rewrite": "/resources-meta.html"
       }
     ],
   "navigationFallback": {
