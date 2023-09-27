@@ -15,19 +15,7 @@
 </head>
 <body>
   <script>
-    fetch("index.html")
-      .then(function(response) {
-        // When the page is loaded convert it to text
-        return response.text()
-    })
-    .then(function(html) {
-        var newBody = html.substring(
-          html.indexOf("<body>") + 6,
-          html.lastIndexOf("</body>"));
-
-        console.log(newBody);
-        document.getElementsByTagName("body")[0].insertAdjacentHTML("beforeend", newBody);
-    })
+    document.location("index.html")
   </script>
 </body>
 </html>
