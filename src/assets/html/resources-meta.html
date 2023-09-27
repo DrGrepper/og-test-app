@@ -18,7 +18,7 @@
   <script>
     fetch("index.html")
       .then(res=> res.text())
-      .then(dats=> console.log(data))
+      .then(data=> console.log(data))
       .then(body=> document.getElementsByTagName("body").innerhtml = body);
   </script>
 </body>
