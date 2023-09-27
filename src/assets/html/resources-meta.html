@@ -23,8 +23,8 @@
     })
     .then(function(html) {
         var newBody = html.substring(
-          html.indexOf("<body>") + 1,
-          html.lastIndexOf("<\/body>"));
+          html.indexOf("<body>") + 6,
+          html.lastIndexOf("</body>"));
 
         console.log(newBody);
         document.getElementsByTagName("body")[0].innerHTML = newBody;
