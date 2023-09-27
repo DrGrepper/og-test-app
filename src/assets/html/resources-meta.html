@@ -27,7 +27,7 @@
           html.lastIndexOf("</body>"));
 
         console.log(newBody);
-        document.getElementsByTagName("body")[0].innerHTML = newBody;
+        document.getElementsByTagName("body")[0].append(newBody);
     })
   </script>
 </body>
