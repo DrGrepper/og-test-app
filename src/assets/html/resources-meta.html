@@ -16,7 +16,10 @@
 <body>
   <app-root></app-root>
   <script>
-    console.log(window.location);
+    fetch("index.html")
+      .then(res=> res.text())
+      .then(dats=> console.log(data))
+      .then(body=> document.getElementsByTagName("body").innerhtml = body);
   </script>
 </body>
 </html>
