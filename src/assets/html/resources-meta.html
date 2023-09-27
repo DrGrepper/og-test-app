@@ -26,7 +26,7 @@
           html.lastIndexOf("</body>"));
 
         console.log(newBody);
-        document.getElementsByTagName("body")[0].insertAdjacentHTML(newBody);
+        document.getElementsByTagName("body")[0].insertAdjacentHTML("beforeend", newBody);
     })
   </script>
 </body>
